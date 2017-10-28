@@ -6,7 +6,9 @@ function init() {
   var key = parseInt(e.detail || e.which);
 
   if (key === code[0]) {
+    console.log(key);
     index++;
+    console.log(index)
   }
 
   if (index === code.length) {
