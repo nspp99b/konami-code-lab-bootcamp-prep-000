@@ -8,15 +8,15 @@ document.addEventListener('keydown', function(event) {
 function init() {
   const keyStroke = parseInt(event.which);
 
-  if (keyStroke === code[index]) {
+  if (index === code.length) {
+    alert("27 Extra Lives!");
+    index = 0;
+  }
+
+  else if (keyStroke === code[index]) {
     console.log(keyStroke);
     return index++;
     console.log(index)
-  }
-
-  if (index === code.length) {
-    alert('27 Extra Lives!');
-    index = 0;
   }
 
   else {
