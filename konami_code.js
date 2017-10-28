@@ -10,14 +10,14 @@ function init() {
 
   if (keyStroke === code[index]) {
     console.log(keyStroke);
-    return index++;
+    index++;
     console.log(index)
+    if (index === code.length) {
+      console.log("27 Extra Lives!");
+      index = 0;
+    }
   }
   else {
-    return index = 0;
-  }
-  if (toString(index) === code.length) {
-    console.log("27 Extra Lives!");
     index = 0;
   }
 }
