@@ -6,10 +6,10 @@ document.addEventListener('keydown', function(event) {
 });
 
 function init() {
-  const key = parseInt(event.key);
+  const keyStroke = parseInt(event.key);
 
-  if (key === code[0]) {
-    console.log(key);
+  if (keyStroke === code[0]) {
+    console.log(keyStroke);
     index++;
     console.log(index)
   }
