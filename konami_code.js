@@ -9,7 +9,7 @@ function init() {
   const keyStroke = parseInt(event.which);
 
   if (index === parseInt(code.length)) {
-    alert("27 Extra Lives!");
+    console.log("27 Extra Lives!");
     index = 0;
   }
 
