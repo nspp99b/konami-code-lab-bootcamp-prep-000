@@ -8,18 +8,16 @@ document.addEventListener('keydown', function(event) {
 function init() {
   const keyStroke = parseInt(event.which);
 
-  if (index === parseInt(code.length)) {
-    console.log("27 Extra Lives!");
-    index = 0;
-  }
-
-  else if (keyStroke === code[index]) {
+  if (keyStroke === code[index]) {
     console.log(keyStroke);
     return index++;
     console.log(index)
   }
-
   else {
     return index = 0;
+  }
+  if (index === parseInt(code.length)) {
+    console.log("27 Extra Lives!");
+    index = 0;
   }
 }
