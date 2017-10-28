@@ -21,3 +21,4 @@ function init() {
     index = 0;
   }
 }
+init()
