@@ -13,7 +13,7 @@ function init() {
     index++;
     console.log(index)
     if (index === code.length) {
-      console.log("27 Extra Lives!");
+      alert("27 Extra Lives!");
       index = 0;
     }
   }
