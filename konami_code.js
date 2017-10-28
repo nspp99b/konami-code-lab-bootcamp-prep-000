@@ -16,7 +16,7 @@ function init() {
   else {
     return index = 0;
   }
-  if (index === parseInt(code.length)) {
+  if (toString(index) === code.length) {
     console.log("27 Extra Lives!");
     index = 0;
   }
