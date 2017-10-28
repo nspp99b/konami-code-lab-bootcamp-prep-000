@@ -1,6 +1,22 @@
-const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+let index = 0;
 
 function init() {
-  // Write your JavaScript code inside the init() function
+  var key = parseInt(e.detail || e.which);
 
+  if (key === code[0]) {
+    index++;
+  }
+
+  if (index === code.length) {
+    alert('27 Extra Lives!');
+    index = 0;
+  }
+
+  else {
+    index = 0;
+  }
 }
+
+document.body.addEventListener('keydown', init())
