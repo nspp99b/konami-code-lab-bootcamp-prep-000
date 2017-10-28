@@ -10,7 +10,7 @@ function init() {
 
   if (keyStroke === code[index]) {
     console.log(keyStroke);
-    index++;
+    return index++;
     console.log(index)
   }
 
@@ -20,6 +20,6 @@ function init() {
   }
 
   else {
-    index = 0;
+    return index = 0;
   }
 }
