@@ -8,7 +8,7 @@ document.addEventListener('keydown', function(event) {
 function init() {
   const keyStroke = parseInt(event.which);
 
-  if (index === code.length) {
+  if (index === parseInt(code.length)) {
     alert("27 Extra Lives!");
     index = 0;
   }
